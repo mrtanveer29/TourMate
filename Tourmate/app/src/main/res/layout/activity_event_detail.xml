@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context="com.github.abdalimran.tourmate.Activities.EventDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/card_bg">
+
+        <TextView
+            android:id="@+id/shw_event_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="#1e98de"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Event Title"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/solidline"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/shw_event_title"
+            android:background="#707070" />
+
+        <LinearLayout
+            android:id="@+id/event_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/solidline"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/RelativeLayout01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/solidline"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/shw_event_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="From"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:background="#b7b7b7" />
+
+                <TextView
+                    android:id="@+id/shw_event_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="To"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/RelativeLayout02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RelativeLayout01">
+
+                <TextView
+                    android:id="@+id/shw_event_startdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Start Date "
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/shw_event_enddate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="End Date "
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RelativeLayout02"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/shw_event_budget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Estimated Budget"
+                    android:textColor="#000"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/shw_event_balance"
+                    android:layout_below="@id/shw_event_budget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Current Balance"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:id="@+id/shw_event_notes"
+                    android:layout_below="@+id/shw_event_balance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Event Notes"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/shw_event_expenses"
+            android:layout_below="@+id/event_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="#1e98de"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Event Expenses"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/solidline2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/shw_event_expenses"
+            android:background="#707070" />
+
+        <ListView
+            android:id="@+id/shw_expense_list"
+            android:layout_below="@id/solidline2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+
+    </RelativeLayout>
+
+</LinearLayout>

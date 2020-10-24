@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/card_bg"
+    android:orientation="vertical"
+    tools:context="com.github.abdalimran.tourmate.Activities.UpdateEventActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+        <EditText
+            android:id="@+id/update_event_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Enter event name here.."/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <EditText
+                android:id="@+id/update_from"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="From"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:padding="10dp"
+                android:layout_marginRight="2dp" />
+
+            <EditText
+                android:id="@+id/update_to"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Destination"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:padding="10dp"
+                android:layout_marginLeft="2dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:id="@+id/set_dates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <LinearLayout
+                android:id="@+id/update_sdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:onClick="pickStartDate"
+                android:layout_alignParentLeft="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:background="@null"
+                    android:src="@drawable/calender2"/>
+
+                <TextView
+                    android:id="@+id/update_start_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Start Date"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="2dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:clickable="true"
+                android:onClick="pickEndDate"
+                android:layout_alignParentRight="true"
+                android:id="@+id/update_edate">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:background="@null"
+                    android:src="@drawable/calender2"/>
+
+                <TextView
+                    android:id="@+id/update_end_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="End Date"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="2dp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="fitXY"
+                android:background="@null"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/dollar2"/>
+
+            <EditText
+                android:id="@+id/update_budget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:layout_marginLeft="2dp"
+                android:hint="Enter budget here.."/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <EditText
+            android:id="@+id/update_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:lines="5"
+            android:gravity="start"
+            android:hint="Write your notes here..."
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:onClick="updateEvent"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:text="Update Event"
+            android:textAllCaps="false"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:onClick="deleteEvent"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:text="Delete Event"
+            android:textAllCaps="false"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/card_bg"
+    tools:context="com.github.abdalimran.tourmate.Activities.ExpenseInputActivity">
+
+    <EditText
+        android:id="@+id/expense_title"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Expense Title" />
+
+    <EditText
+        android:id="@+id/expense_cost"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Enter Cost" />
+
+    <EditText
+        android:id="@+id/expense_detail"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expense Detail" />
+
+    <Button
+        android:id="@+id/addexpense"
+        android:layout_marginTop="30dp"
+        android:onClick="addExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Expense"
+        android:textAllCaps="false"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
+

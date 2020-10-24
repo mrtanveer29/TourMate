@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tourmate</string>
+    <string name="title_activity_navdrawer">Navigation Drawer Activity</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="navigation_drawer_header">Navigation Drawer Header</string>
+    <string name="date_picker_title">Pick a Date</string>
+</resources>

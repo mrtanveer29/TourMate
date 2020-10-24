@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_edit_profile"
+            android:title="Edit Profile"
+            android:icon="@drawable/ic_edit_black_24dp"/>
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/weather"
+            android:title="Weather Updates"
+            android:icon="@drawable/weather"/>
+
+        <item
+            android:id="@+id/nearby"
+            android:title="Nearby Places"
+            android:icon="@drawable/ic_place_black_24dp"/>
+
+        <item
+            android:id="@+id/share"
+            android:title="Share"
+            android:icon="@drawable/ic_share_black_24dp"/>
+    </group>
+
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"/>
+    </group>
+
+</menu>
